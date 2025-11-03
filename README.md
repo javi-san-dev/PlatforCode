@@ -1,11 +1,13 @@
-# Platforcode
-
-Welcome to **Platforcode**.  
-This repository serves as the official distribution point for **pre-built binaries** published with every release.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c1da5e9b-01cf-482f-bc65-968754c99c2d" width="400">
+</p>
 
 ---
 
 ## 📘 About Platforcode
+
+> Welcome to **Platforcode**!   
+This repository serves as the official distribution point for **pre-built binaries** published with every release.
 
 **Platforcode** is a code platform designed to help you improve your programming skills.  
 It provides a vast collection of coding problems along with a guided path to solve them efficiently, helping both beginners and experienced developers grow through practice.
