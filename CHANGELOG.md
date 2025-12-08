@@ -1,3 +1,10 @@
+### Version 0.1.5 - 08 December 2025
+
+- fix: streamline challenge submission check by using submittedCodeList for improved clarity.
+- feat: update state management to include 'updatedRestart' and enhance user feedback on update completion.
+- fix: correct import statement for restartApp and initialize updateDetails state.
+- feat: enhance release checklist template with detailed sections for versioning, changelog, and checklists.
+
 ### Version 0.1.4 - 07 December 2025
 
 - fix: UI change, adding new button for restart app on update finish.
