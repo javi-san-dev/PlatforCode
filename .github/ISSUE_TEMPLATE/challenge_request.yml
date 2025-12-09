@@ -1,0 +1,125 @@
+name: 💡 Challenge Request
+description: Suggest a new coding challenge for PlatforCode
+title: "[Challenge]: "
+labels: ["challenge", "enhancement"]
+assignees:
+  - javi-san-dev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new challenge! Please provide details below.
+
+  - type: input
+    id: challenge-name
+    attributes:
+      label: Challenge Name
+      description: What would you like to call this challenge?
+      placeholder: "e.g., Binary Tree Maximum Path Sum"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      description: How difficult is this challenge?
+      options:
+        - Easy
+        - Medium
+        - Hard
+        - Expert
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Challenge Category
+      description: What category does this challenge belong to?
+      options:
+        - Arrays
+        - Strings
+        - Linked Lists
+        - Trees
+        - Graphs
+        - Dynamic Programming
+        - Sorting
+        - Searching
+        - Hash Tables
+        - Recursion
+        - Backtracking
+        - Greedy Algorithms
+        - Math
+        - Bit Manipulation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Challenge Description
+      description: Describe the problem statement
+      placeholder: |
+        Given an array of integers...
+        Return...
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Provide example test cases
+      placeholder: |
+        Example 1:
+        Input: [1, 2, 3]
+        Output: 6
+        Explanation: ...
+
+        Example 2:
+        Input: [4, 5, 6]
+        Output: 15
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: List any constraints for the challenge
+      placeholder: |
+        - 1 <= arr.length <= 10^4
+        - -10^9 <= arr[i] <= 10^9
+
+  - type: dropdown
+    id: languages
+    attributes:
+      label: Supported Languages
+      description: Which languages should support this challenge?
+      multiple: true
+      options:
+        - JavaScript/TypeScript
+        - Python
+        - Java
+        - C++
+        - Rust
+        - Go
+        - All languages
+
+  - type: textarea
+    id: solution-hints
+    attributes:
+      label: Solution Hints (Optional)
+      description: Any hints or approaches to solve this challenge?
+      placeholder: |
+        Hint 1: Try using a hash map...
+        Hint 2: Consider the time complexity...
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the challenge request here.
