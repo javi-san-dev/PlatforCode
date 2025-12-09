@@ -1,0 +1,111 @@
+name: 🐛 Bug Report
+description: Report a bug or issue with PlatforCode
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+assignees:
+  - javi-san-dev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below.
+
+  - type: input
+    id: version
+    attributes:
+      label: PlatforCode Version
+      description: What version of PlatforCode are you using?
+      placeholder: "e.g., v0.1.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Instead, what happened was...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Drag and drop images here
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console Logs
+      description: If applicable, paste any relevant console logs or error messages.
+      placeholder: |
+        Paste console output here
+      render: shell
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Programming Language (if applicable)
+      description: Which programming language were you using when the bug occurred?
+      options:
+        - JavaScript/TypeScript
+        - Python
+        - Java
+        - C++
+        - Rust
+        - Go
+        - Not applicable
+        - Other
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
+      placeholder: Any additional information...
